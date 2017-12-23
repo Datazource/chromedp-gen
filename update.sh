@@ -28,9 +28,9 @@ fi
 
 if [[ "$UPDATE" == 1 ]]; then
   go get -u \
-    golang.org/x/tools/cmd/goimports \
     github.com/mailru/easyjson/easyjson \
-    github.com/valyala/quicktemplate/qtc
+    github.com/valyala/quicktemplate/qtc \
+    golang.org/x/tools/cmd/goimports
 
   date +%s > .last
 fi
